@@ -1,0 +1,377 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header{
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    color: white;
+}
+#header > div{
+    margin: 7px 15px;
+    font-size:17px ;
+   
+}
+#head-main{
+    margin: 0px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+#search{
+    
+    width: 35%;
+    height: 35px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px ;
+   
+    margin-left: 5px;
+}
+#search > input{
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    font-size: 15px;
+}
+#search > i{
+    margin-top: 7px;
+    margin-right: 5px;
+   
+}
+#head-main >div:nth-child(3) {
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#head-main >div:nth-child(3) > i {
+    margin-right: 10px;
+    font-size: 35px;
+
+}
+#head-main >div:nth-child(3) > span {
+    font-size: 17px;
+}
+#nav{
+    margin: 10px;
+    /* width: 60%; */
+    display: flex;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+
+}
+#nav > button{
+    padding: 10px;
+    background-color: white;
+    border: 2px solid white;
+    font-size: 17px;
+    margin: 2px;
+    cursor: pointer;
+
+}
+#nav > button:hover{
+    /* width: 100%; */
+    background: black;
+    color: white;
+
+}
+.slide-container{
+    width: 98%;
+    margin: auto;
+    height: 700px;
+    position: relative;
+    border: 2px solid rgb(57, 57, 57);
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+}
+.slide-container > .slide{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.slide-container > .slide > img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+.btn > span{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 40px;
+    color: rgb(76, 71, 71);
+}
+.btn > span:nth-child(1) {
+    left: 20px;
+}
+.btn > span:nth-child(2) {
+   right: 20px;
+}
+.btn > span:hover{
+    background-color: rgb(209, 206, 206);
+}
+
+.dot-cont{
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+}
+
+.dot-cont > .dot{
+    width: 12px;
+    height: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border: 2px solid #7b7979 ;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot-cont > .one{
+    background-color: rgb(95, 88, 88);
+}
+
+#cate{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.card{
+   
+    color: rgb(109, 106, 106);
+    width: 30%;
+    margin: auto;
+    height:600px;
+    overflow: hidden;
+    border: 2px solid red;
+}
+.card > img{
+    width: 100%;
+    height: 600px;
+}
+
+
+.over {
+  width: 29.55%;
+   height: 70px;
+   box-sizing: border-box;
+   position: absolute;
+   top: 1475px;
+   background-color: rgb(227, 224, 224);
+   transition: 0.5s;
+}
+.over > p{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+.but{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    visibility: hidden;
+}
+.but > button{
+    margin: 5px;
+    padding: 2px;
+    background-color:rgb(189, 189, 189);
+    color: rgb(109, 106, 106);
+    border: 2px solid rgb(189, 189, 189);
+   border: 2px solid rgb(109, 106, 106); ;
+   visibility: hidden; 
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover > .over{
+    height:265px;
+    top: 1280px;
+    background-color: rgb(227, 224, 224);
+}
+.card:hover p{
+    visibility: visible;
+}
+.card:hover .but > button{
+    visibility: visible;
+}
+.service > h1{
+    text-align: center;
+    color: #6c6969;
+    margin-top: 50px;
+}
+.serve {
+    display: flex;
+    width: 100%;
+    margin: auto;
+}
+
+.serve > div{
+    margin: 30px;
+    margin-left: 10px;
+}
+.one{
+    width: 80%;
+}
+.one > .butn > button{
+    margin: 30px;
+    padding: 10px 10px;
+    border: 2px solid white;
+    background-color: white;
+    font-weight: bold;
+}
+.butn > button:hover{
+    background-color: black;
+    color:white;
+}
+
+
+.two > p{
+    color: rgb(137, 136, 136);
+}
+.two > button{
+    padding: 7px 12px;
+    background-color: white;
+
+}
+
+.photo{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #6c6969;
+}
+.image > img{
+    width: 100%;
+}
+.slide2{
+    height: 120px;
+    /* border: 2px solid red; */
+    position: relative;
+    margin-top:20px ;
+}
+.slide2 > .company {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.direction > span{
+    position: absolute;
+    top: 10%;
+    cursor: pointer;
+    color: grey;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.slide2 > .direction > span:nth-child(1){
+    left: 10px;
+}
+.right{
+    right: 5px;
+}
+.direction > span:hover{
+    background-color: rgb(209, 206, 206);
+} 
+
+.jam{
+    display: flex;
+}
+.jam > div{
+    width: 80%;
+    margin: 20px;
+    color: #4a4646;
+}
+.jam > div > h3{
+    color: rgb(55, 54, 54);
+}
+.jam > div > button{
+    background-color: black;
+    color: rgb(214, 211, 211);
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.testi {
+    text-align: center;
+}
+.testi > p{
+    color: #636363;
+}
+.testi > p > span{
+    color: rgb(33, 32, 32);
+    font-weight: bold;
+}
+.testi > button{
+    margin-top: 10px;
+    padding: 7px 40px;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.testi > button:hover {
+    border: 2px solid red;
+    color: red;
+}
+.logos{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(235, 229, 229);
+    padding: 30px;
+    
+}
+.logos > div{
+    display: flex;
+    width: 80%;
+    /* margin: 30px; */
+    flex-direction: column;
+   
+   
+}
+
+.logos > div > span{
+    font-size: 50px;
+}
+.logos > div >a{
+    font-size: 17px;
+    color: black;
+}
+.last-main{
+    background-color: rgb(37, 36, 36);
+    color: rgb(209, 203, 203);
+}
+.last{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.last-main > div:nth-child(2) {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.end{
+    display: flex;
+    flex-direction: column;
+}
+.all-logo{
+    font-size: 40px;
+}
